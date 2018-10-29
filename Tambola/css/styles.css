@@ -1,0 +1,101 @@
+table { border: 2px solid #333; margin: 20px 20px 45px 20px; padding: 0; float: left; }
+tbody { padding: 0; margin: 0; }
+tr { margin: 0; padding: 0; }
+td { display: table-cell; width: 30px; height: 30px; border: 1px solid; margin: 0; padding: 0; text-align: center; vertical-align: middle; }
+td.empty { background: #3aaff8; }
+td.corner { background: #FF69B4; }
+@media print and (color) {
+  table {
+    float: left;
+  }
+}
+
+.can-be-hidden {
+ /*  display: none!important; */
+}
+li { float: left; padding: 5px; list-style-type: none; }
+li.break { clear: both; }
+div.hide-all {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  z-index: 900;
+}
+ul.tam-left-num li a {
+  color: #ffffff;
+  width: 52px;
+  display: inline-block;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 16px;
+  background: black;
+  border-radius: 50%;
+  border: 3px solid green;
+}
+ul.tam-left-num li.appeared a {
+  background: green;
+  border: 3px solid #fff;
+  cursor: crosshair;
+}
+.tam-rand-num {
+  background: #fff;
+  width: 35%;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-size: 236px;
+  float: left;
+  position: fixed;
+  height: 100%;
+  z-index: 999;
+  top: 20px;
+  vertical-align: middle;
+}
+#generate-next {
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-size: 40px;
+  z-index: 1000;
+  text-decoration: none;
+  color: #7EC55F;
+  background-color: #f3e905;
+}
+.tam-left-num {
+  position: fixed;
+  z-index: 1002;
+  top: 0;
+  left: 5px;
+  background-color: #bb0000;
+  padding: 10px;
+  color: aliceblue;
+  margin: 0;
+  width: 71%;
+}
+span.clock {
+  position: fixed;
+  right: 245px;
+  font-size: 36px;
+  color: #000000;
+  z-index: 9999;
+  top: 2px;
+  border: 1px solid #bb0000;
+  border-radius: 50%;
+  padding: 13px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+a.gen-ticket {
+  position: fixed;
+  z-index: 9999;
+  bottom: 10px;
+  right: 5px;
+}
